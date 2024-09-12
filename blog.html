@@ -6,12 +6,62 @@
     <title>Blog - Kareena Kayla Kumar</title>
     <link rel="stylesheet" href="style.css"></head>
 <body>
-    <div class="main">
-        <div>
-            <h1>Blog - Kareena Kayla Kumar</h1>
-            <br>
-            <a href="./index.html">Home</a>
-        </div>
+    <div class="filters">
+        <label for="search_sort">Search For:</label>
+        <select name="search_sort" id="search_sort">
+            <option value="Content">Content</option>
+            <option value="Title">Title</option>
+            <option value="Date">Date</option>
+        </select>
+        <input type="text" placeholder="search..." id="searchbar">
+        <svg id="up_down" style="rotate: 0deg;" fill="#d3d3d3" width="24px" height="24px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" stroke="#d3d3d3"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M24 11.305l-7.997 11.39L8 11.305z"></path></g></svg>
     </div>
+
+    <hr>
+
+    <div class="main">
+        <h1>Blog - Kareena Kayla Kumar</h1>
+        <a href="./index.html">Home</a>
+    </div>
+
+    <div class="posts">
+        
+        <div class="post" id="idofpost">
+            <h3>aTitle of Post</h3>
+            <i>August 27th, 2024</i>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, sint. Voluptatibus quisquam ipsam ipsa. Corporis magnam quis debitis sapiente enim dignissimos. Est, sunt optio. Animi necessitatibus facilis inventore. Esse, neque.</p>
+            <a href="./posts/template_post.html">Read More</a>
+        </div>
+
+        <div class="post" id="idofpost">
+            <h3>qTitle of Post</h3>
+            <i>September 2nd, 2024</i>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, sint. Voluptatibus quisquam ipsam ipsa. Corporis magnam quis debitis sapiente enim dignissimos. Est, sunt optio. Animi necessitatibus facilis inventore. Esse, neque.</p>
+            <a href="./posts/template_post.html">Read More</a>
+        </div>
+
+        <div class="post" id="idofpost">
+            <h3>lTitle of Post</h3>
+            <i>September 6th, 2024</i>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, sint. Voluptatibus quisquam ipsam ipsa. Corporis magnam quis debitis sapiente enim dignissimos. Est, sunt optio. Animi necessitatibus facilis inventore. Esse, neque.</p>
+            <a href="./posts/template_post.html">Read More</a>
+        </div>
+
+        <div class="post" id="idofpost">
+            <h3>Title of Post</h3>
+            <i>September 9th, 2024</i>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, sint. Voluptatibus quisquam ipsam ipsa. Corporis magnam quis debitis sapiente enim dignissimos. Est, sunt optio. Animi necessitatibus facilis inventore. Esse, neque.</p>
+            <a href="./posts/template_post.html">Read More</a>
+        </div>
+
+        <div class="post" id="idofpost">
+            <h3>zTitle of Post</h3>
+            <i>September 12th, 2024</i>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, sint. Voluptatibus quisquam ipsam ipsa. Corporis magnam quis debitis sapiente enim dignissimos. Est, sunt optio. Animi necessitatibus facilis inventore. Esse, neque.</p>
+            <a href="./posts/template_post.html">Read More</a>
+        </div>
+
+    </div>
+<script src="./app.js"></script>
 </body>
 </html>
