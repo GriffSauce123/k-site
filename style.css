@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    transition: 0.2s;
+    font-family: "Lora", serif;
+    letter-spacing: 1px;
+}
+
+html {
+    --s: 10px; /* control the size*/
+    --c1: #033a22;
+    --c2: #03482f;
+    
+    --g:radial-gradient(30% 50% at 30% 100%,#0000 66%,var(--c1) 67% 98%,#0000);
+    background:
+        var(--g),var(--g) calc(5*var(--s)) calc(3*var(--s)),
+        repeating-linear-gradient(90deg,var(--c1) 0 10%,var(--c2) 0 50%);
+    background-size: calc(10*var(--s)) calc(6*var(--s));
+    padding: 15px;    
+}
+
+body {
+    display: flex;
+    color: whitesmoke;
+    min-height: 100vh;
+}
+
+hr {
+    border-color: #039f66;
+    margin: 40px;
+}
+
+.hero-img {
+    width: 50%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.main {
+    background: #151515;
+    min-height: 80vh;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 4px 35px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+.hero {
+    height: 100%;
+    margin: auto 0 auto 0;
+    padding: 40px;
+    display: flex;
+}
+
+.left {
+    margin-right: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 50%;
+}
+
+a {
+    line-height: 40px;
+    padding: 15px 20px;
+    background: whitesmoke;
+    color: #151515;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+.sep {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@media (max-width:1090px) {
+    .hero {
+        display: block;
+        padding: 10px;
+    }
+    .left {
+        width: 100%;
+    }
+    .hero-img {
+        margin-top: 40px;
+        width: 100%;
+        max-width: 512px;
+    }
+}
