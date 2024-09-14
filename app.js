@@ -25,7 +25,7 @@ function search() {
     if (searchtype == "Title") {
         for (let post of posts.children) {
             console.log(post)
-            if (!(post.children[0].innerHTML.toLocaleLowerCase().includes(searchbar.value.toLocaleLowerCase()))) {
+            if (!(post.children[0].innerHTML.toLowerCase().includes(searchbar.value.toLowerCase()))) {
                 post.style.display = "none"
             }
             else {
@@ -36,7 +36,7 @@ function search() {
     else if (searchtype == "Content") {
         for (let post of posts.children) {
             console.log(post)
-            if (!(post.children[2].innerHTML.toLocaleLowerCase().includes(searchbar.value.toLocaleLowerCase()))) {
+            if (!(post.children[2].innerHTML.toLowerCase().includes(searchbar.value.toLowerCase()))) {
                 post.style.display = "none"
             }
             else {
@@ -48,7 +48,7 @@ function search() {
         //use calendar input to select a range of dates maybe
         for (let post of posts.children) {
             console.log(post)
-            if (!(post.children[1].innerHTML.toLocaleLowerCase().includes(searchbar.value.toLocaleLowerCase()))) {
+            if (!(post.children[1].innerHTML.toLowerCase().includes(searchbar.value.toLowerCase()))) {
                 post.style.display = "none"
             }
             else {
