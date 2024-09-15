@@ -6,55 +6,101 @@
     <title>Blog - Kareena Kayla Kumar</title>
     <link rel="stylesheet" href="style.css"></head>
 <body>
-    <h1>Blog - Kareena Kayla Kumar</h1>
-    <div class="filters">
-        <a href="./index.html">Home</a>
-
-        <label for="search_sort">Search For:</label>
-        <select name="search_sort" id="search_sort">
-            <option value="Content">Content</option>
-            <option value="Title">Title</option>
-            <option value="Date">Date</option>
-        </select>
-        <input type="text" placeholder="search..." id="searchbar">
-        <svg id="up_down" style="rotate: 0deg;" fill="#d3d3d3" width="24px" height="24px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" stroke="#d3d3d3"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M24 11.305l-7.997 11.39L8 11.305z"></path></g></svg>
+    <div class="header">
+        <div class="header-inner">
+            <h1>Kareena</h1>
+            <div class="filters">    
+                <label for="search_sort">Search For:</label>
+                <select name="search_sort" id="search_sort" class="input">
+                    <option value="Content">Content</option>
+                    <option value="Title">Title</option>
+                    <option value="Subtitle">Subtitle</option>
+                    <option value="Date">Date</option>
+                </select>
+                <input type="text" placeholder="Search..." id="searchbar" class="input">
+                <svg id="up_down" style="rotate: 0deg;" fill="var(--text)" width="24px" height="24px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" stroke="var(--text)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M24 11.305l-7.997 11.39L8 11.305z"></path></g></svg>
+            </div>
+            <ul>
+                <a href="./index.html" class="nav_button">Home</a>
+                <div class="dropdown">
+                    <a href="./blog.html" class="dropdown_button nav_button">Blog v</a>
+                    <div class="dropdown_content">
+                        <a href="./blog.html" class="nav_button">Cat 1</a>
+                        <a href="./blog.html" class="nav_button">Cat 1</a>
+                        <a href="./blog.html" class="nav_button">Cat 1</a>
+                    </div>
+                </div>
+                <a href="./contact.html" class="nav_button">Reach Me</a>
+            </ul>
+        </div>
     </div>
-
-    <div class="posts">
+    
+    <div class="posts main-container">
         
         <div class="post" id="idofpost">
-            <h3>aTitle of Post</h3>
-            <i>August 27th, 2024</i>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, sint. Voluptatibus quisquam ipsam ipsa. Corporis magnam quis debitis sapiente enim dignissimos. Est, sunt optio. Animi necessitatibus facilis inventore. Esse, neque.</p>
-            <a href="./posts/template_post.html">Read More</a>
+            <img style="width: 256px; height: 256px;">
+            <div class="right" id="content">
+                <h2>aTitle of Post</h2>
+                <h3>Subtitle - Category</h3>
+                <i>August 27th, 2024</i>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, sint. Voluptatibus quisquam ipsam ipsa. Corporis magnam quis debitis sapiente enim dignissimos. Est, sunt optio. Animi necessitatibus facilis inventore. Esse, neque.</p>
+                <a href="./posts/template_post.html">Read More</a>
+            </div>
         </div>
 
         <div class="post" id="idofpost">
-            <h3>qTitle of Post</h3>
-            <i>September 2nd, 2024</i>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, sint. Voluptatibus quisquam ipsam ipsa. Corporis magnam quis debitis sapiente enim dignissimos. Est, sunt optio. Animi necessitatibus facilis inventore. Esse, neque.</p>
-            <a href="./posts/template_post.html">Read More</a>
+            <div class="left" id="content">
+                <h2>aTitle of Post</h2>
+                <h3>Subtitle - Category</h3>
+                <i>August 27th, 2024</i>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, sint. Voluptatibus quisquam ipsam ipsa. Corporis magnam quis debitis sapiente enim dignissimos. Est, sunt optio. Animi necessitatibus facilis inventore. Esse, neque.</p>
+                <a href="./posts/template_post.html">Read More</a>
+            </div>
+            <img style="width: 256px; height: 256px;">
         </div>
 
         <div class="post" id="idofpost">
-            <h3>lTitle of Post</h3>
-            <i>September 6th, 2024</i>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, sint. Voluptatibus quisquam ipsam ipsa. Corporis magnam quis debitis sapiente enim dignissimos. Est, sunt optio. Animi necessitatibus facilis inventore. Esse, neque.</p>
-            <a href="./posts/template_post.html">Read More</a>
+            <img style="width: 256px; height: 256px;">
+            <div class="right" id="content">
+                <h2>aTitle of Post</h2>
+                <h3>Subtitle - Category</h3>
+                <i>August 27th, 2024</i>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, sint. Voluptatibus quisquam ipsam ipsa. Corporis magnam quis debitis sapiente enim dignissimos. Est, sunt optio. Animi necessitatibus facilis inventore. Esse, neque.</p>
+                <a href="./posts/template_post.html">Read More</a>
+            </div>
         </div>
 
         <div class="post" id="idofpost">
-            <h3>Title of Post</h3>
-            <i>September 9th, 2024</i>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, sint. Voluptatibus quisquam ipsam ipsa. Corporis magnam quis debitis sapiente enim dignissimos. Est, sunt optio. Animi necessitatibus facilis inventore. Esse, neque.</p>
-            <a href="./posts/template_post.html">Read More</a>
+            <div class="left" id="content">
+                <h2>aTitle of Post</h2>
+                <h3>Subtitle - Category</h3>
+                <i>August 27th, 2024</i>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, sint. Voluptatibus quisquam ipsam ipsa. Corporis magnam quis debitis sapiente enim dignissimos. Est, sunt optio. Animi necessitatibus facilis inventore. Esse, neque.</p>
+                <a href="./posts/template_post.html">Read More</a>
+            </div>
+            <img style="width: 256px; height: 256px;">
         </div>
 
         <div class="post" id="idofpost">
-            <h3>zTitle of Post</h3>
-            <i>September 12th, 2024</i>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, sint. Voluptatibus quisquam ipsam ipsa. Corporis magnam quis debitis sapiente enim dignissimos. Est, sunt optio. Animi necessitatibus facilis inventore. Esse, neque.</p>
-            <a href="./posts/template_post.html">Read More</a>
+            <img style="width: 256px; height: 256px;">
+            <div class="right" id="content">
+                <h2>aTitle of Post</h2>
+                <h3>Subtitle - Category</h3>
+                <i>August 27th, 2024</i>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, sint. Voluptatibus quisquam ipsam ipsa. Corporis magnam quis debitis sapiente enim dignissimos. Est, sunt optio. Animi necessitatibus facilis inventore. Esse, neque.</p>
+                <a href="./posts/template_post.html">Read More</a>
+            </div>
+        </div>
+
+        <div class="post" id="idofpost">
+            <div class="left" id="content">
+                <h2>aTitle of Post</h2>
+                <h3>Subtitle - Category</h3>
+                <i>August 27th, 2024</i>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, sint. Voluptatibus quisquam ipsam ipsa. Corporis magnam quis debitis sapiente enim dignissimos. Est, sunt optio. Animi necessitatibus facilis inventore. Esse, neque.</p>
+                <a href="./posts/template_post.html">Read More</a>
+            </div>
+            <img style="width: 256px; height: 256px;">
         </div>
 
     </div>
