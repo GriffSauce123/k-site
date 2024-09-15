@@ -1,4 +1,46 @@
-.post {
-    border: solid thin black;
-    margin: 10px;
+:root {
+    --text: #151118;
+    --white: #FFF3D8;
+    --darkgreen: #1A2B11;
+    --accent: #311055;
+    --light-text: #2A2130;
+
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    background: var(--darkgreen);
+}
+
+.main-container {
+    background: var(--white);
+    margin: 0 auto 0 auto;
+    min-height: 100vh;
+    width: 70%;
+    padding-top: 80px;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    background: var(--white);
+    border-bottom: solid 2px var(--darkgreen);
+
+}
+
+.header-inner {
+    width: 70%;
+    margin: auto;
+    display: flex;
+}
+
+.header ul {
+    margin-left: auto;
 }
