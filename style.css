@@ -50,6 +50,7 @@ li {
     background: var(--text);
     margin: 0 auto 0 auto;
     padding-top: 63px;
+    padding-bottom: 63px;
     min-height: 93.6vh;
     width: 70%;
     box-shadow: 0 4px 35px rgba(0, 0, 0, 0.3);
@@ -170,7 +171,6 @@ svg:hover {
 @media (max-width: 800px) {
     .main-container {
         width: 90%;
-        padding-bottom: 63px;
     }
 
     .post {
