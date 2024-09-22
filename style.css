@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
-    --text: #151118;
-    --white: #FFF3D8;
-    --dark-white: #bdb49e;
-    --darkgreen: #1A2B11;
+    --text: #1d1820;
+    --white: #e6dbc1;
+    --dark-white: #b3aa96;
+    --darkgreen: #1a4b29;
     --accent: #311055;
     --light-text: #2A2130;
 
@@ -41,14 +41,18 @@ body {
     background: var(--darkgreen);
 }
 
+li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 .main-container {
     background: var(--text);
     margin: 0 auto 0 auto;
-    min-height: 100vh;
+    min-height: 93.6vh;
     width: 70%;
     padding-top: 63px;
     box-shadow: 0 4px 35px rgba(0, 0, 0, 0.3);
-    border: solid 2px var(--white);
 }
 
 .header {
@@ -102,7 +106,7 @@ ul a {
     position: absolute;
     left: 10px;
     top: 27px;
-    width: calc(100% - 10px);
+    /*width: calc(100% - 10px);*/
 }
 
 .dropdown_content a {
@@ -159,6 +163,10 @@ svg:hover {
 }
 
 @media (max-width: 800px) {
+    .main-container {
+        width: 90%;
+    }
+
     .post {
         display: block;
     }
@@ -166,4 +174,22 @@ svg:hover {
         width: 100% !important;
         padding: 0 !important;
     }
+}
+
+.homepage-container {
+    padding: 40px;
+    padding-top: 100px;
+
+}
+
+.post-header * {
+    display: flex;
+    margin: auto;
+    margin-top: 35px;
+    text-align: center;
+    width: fit-content;
+}
+
+.post-content {
+    padding: 20px calc(7% + 7px);
 }
