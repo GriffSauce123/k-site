@@ -5,6 +5,10 @@ const searchtype = document.getElementById("search_sort").value
 
 const up_down = document.getElementById("up_down")
 
+const webhook = document.URL.slice(document.URL.lastIndexOf('?'))
+
+window.addEventListener("load", (event) => {filter_by_category(webhook.toLocaleLowerCase().slice(10))});
+
 up_down.addEventListener("click", flip_order)
 searchbar.addEventListener("keyup", search)
 
@@ -67,4 +71,17 @@ function search() {
             }
         }
     }
+}
+
+function filter_by_category(cat) {
+    if (!(cat == '')) {
+        for (let post of posts.children) {
+            if (!(post.querySelector(".category").id.toLowerCase() == cat)) {
+                post.style.display = "none"
+            }
+            else {
+                post.style.display = "flex"
+            }
+        }
+}
 }
