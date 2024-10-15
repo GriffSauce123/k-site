@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap');
 
 :root {
     --text: #151118;
@@ -11,7 +11,7 @@
 }
 
 * {
-    font-family: "Libre Baskerville", serif;
+    font-family: "IM Fell English", serif;
     transition: 0.15s ease-in-out;
     color: var(--white);
 }
@@ -144,7 +144,7 @@ ul a {
     padding: 10px 20px;
     border-radius: 0;
     border: solid 2px var(--white);
-    background: var(--light-text);
+    background: var(--light-text) !important;
     font-family: inherit;
     font-size: 1rem;
 }
