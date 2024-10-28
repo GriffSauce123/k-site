@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap');
 
 :root {
-    --text: #1d1820;
+    --text: #151515;
     --white: #e6dbc1;
     --dark-white: #b3aa96;
-    --darkgreen: #1a4b29;
-    --accent: #311055;
-    --light-text: #2A2130;
+    --darkgreen: #022e1e;
+    --lightgreen: #0a552a;
+    --light-text: #151515cc;
 
 }
 
@@ -35,10 +35,26 @@ html {
     margin: 0;
 }
 
+html {
+    --s: 54px; /* control the size*/
+    --c1: var(--lightgreen);
+    --c2: var(--darkgreen);
+    
+    --_g: #0000 83%,var(--c1) 85% 99%,#0000 101%;
+    background:
+      radial-gradient(27% 29% at right ,var(--_g)) calc(var(--s)/ 2) var(--s),
+      radial-gradient(27% 29% at left  ,var(--_g)) calc(var(--s)/-2) var(--s),
+      radial-gradient(29% 27% at top   ,var(--_g)) 0 calc(var(--s)/ 2),
+      radial-gradient(29% 27% at bottom,var(--_g)) 0 calc(var(--s)/-2)
+      var(--c2);
+    background-size: calc(2*var(--s)) calc(2*var(--s));
+    background-attachment: fixed;
+  }
+
 body {
     display: flex;
     margin: 0;
-    background: var(--darkgreen);
+    
 }
 
 li {
@@ -69,7 +85,7 @@ ul {
     position: fixed;
     display: flex;
     background: var(--text);
-    border-bottom: solid 2px var(--white);
+    border-bottom: solid 2px var(--lightgreen);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 
 }
