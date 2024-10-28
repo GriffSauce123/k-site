@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap');
 
 :root {
-    --text: #151515;
+    --text: #001514;
     --white: #e6dbc1;
     --dark-white: #b3aa96;
     --darkgreen: #022e1e;
@@ -76,7 +76,7 @@ ul {
     padding-top: 63px;
     padding-bottom: 63px;
     min-height: 93.6vh;
-    width: 70%;
+    width: 85%;
     box-shadow: 0 4px 35px rgba(0, 0, 0, 0.3);
 }
 
