@@ -13,6 +13,14 @@ up_down.addEventListener("click", flip_order)
 searchbar.addEventListener("keyup", search)
 
 function flip_order() {
+    let display = 0
+    if (window.screen.width >= 800) {
+        display = "flex"
+    }
+    else {
+        display = "block"
+    }
+    
     if (up_down.style.rotate == "180deg") {
         up_down.style.rotate = "0deg";
     }
@@ -33,7 +41,7 @@ function search() {
                 post.style.display = "none"
             }
             else {
-                post.style.display = "flex"
+                post.style.display = display
             }
         }
     }
@@ -44,7 +52,7 @@ function search() {
                 post.style.display = "none"
             }
             else {
-                post.style.display = "flex"
+                post.style.display = display
             }
         }
     }
@@ -55,7 +63,7 @@ function search() {
                 post.style.display = "none"
             }
             else {
-                post.style.display = "flex"
+                post.style.display = display
             }
         }
     }
@@ -67,7 +75,7 @@ function search() {
                 post.style.display = "none"
             }
             else {
-                post.style.display = "flex"
+                post.style.display = display
             }
         }
     }

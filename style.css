@@ -17,10 +17,13 @@
 
 h2 {
     font-size: 36px;
+    margin-bottom: 0;
 }
 
 h3 {
     font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 p {
@@ -52,10 +55,6 @@ li {
 
 ul {
     padding-left: 0 !important;
-}
-
-.filters {
-    padding-left: 20px;
 }
 
 .main-container {
@@ -136,23 +135,28 @@ ul a {
     display: block;
 }
 
+.posts {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .post {
     display: flex;
-    margin-top: 20px;
-    border-bottom: solid thin var(--lightgreen);
+    margin-top: 30px;
+    border-bottom: solid 2px var(--lightgreen);
 }
 
 .post img {
-    margin-top: auto;
-    margin-bottom: 20px;
+    margin: auto;
+    width: 256px; 
+    height: 256px; 
+    object-fit: cover;
 }
 
 .left, .right {
     width: calc(100% - 256px);
     padding-right: 20px;
     padding-left: 20px;
-    border-left: solid thin var(--lightgreen);
-    margin-left: 20px;
     margin-top: 50px;
     padding-bottom: 20px;
 }
@@ -161,9 +165,22 @@ ul a {
     margin-top: 0;
 }
 
+.right a {
+    font-weight: bold;
+    letter-spacing: .75px;
+    text-decoration: none;
+    border-bottom: solid 2px transparent;
+}
+
+.right a:hover {
+    border-bottom: solid 2px var(--lightgreen);
+    text-decoration: none;
+}
+
 .filters {
     margin: auto;
     display: flex;
+    padding-left: 20px;
 }
 
 .filters * {
@@ -188,9 +205,8 @@ ul a {
 }
 
 svg:hover {
-    opacity: 0.9;
-    background: rgba(0, 0, 0, 0.1);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0.8;
+    filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.65));
 }
 
 .bottom_nav {
@@ -211,7 +227,15 @@ svg:hover {
     }
 
     .filters {
-        display: none;
+        position: fixed;
+        top: 95px;
+        left: 0px;
+    }
+
+    .filters * {
+        max-width: 40vw;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .post {
@@ -223,6 +247,10 @@ svg:hover {
         margin: auto;
         margin-top: 20px;
         margin-bottom: 20px;
+        width: 256px; 
+        height: 256px; 
+        object-fit: cover;
+
     }
     .post h2, .post h3, .post p, .post i, .post a {
         display: flex;
@@ -230,6 +258,11 @@ svg:hover {
         width: fit-content;
         padding-bottom: 20px;
     }
+
+    .post a {
+        padding-bottom: 0;
+    }
+
     .right, .left {
         width: 100% !important;
         padding: 0 !important;
