@@ -15,6 +15,10 @@
     color: var(--darkgreen);
 }
 
+h1 a {
+    color: white;
+}
+
 h2 {
     font-size: 36px;
     margin-bottom: 0;
@@ -35,7 +39,7 @@ p {
 html {
     padding: 0;
     margin: 0;
-    background: rgb(233, 243, 237);
+    background: whitesmoke;
 }
 
 hr {
@@ -71,8 +75,7 @@ ul {
     display: flex;
     border-bottom: solid 2px var(--lightgreen);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    background: rgb(230,255,254);
-    background: linear-gradient(164deg, rgba(230,255,254,1) 0%, rgba(244,255,245,1) 82%);
+    background: var(--lightgreen);
     z-index: 9;
 
 }
@@ -192,22 +195,28 @@ ul a {
 .input {
     padding: 10px 20px;
     border-radius: 0;
-    border: solid 2px var(--lightgreen);
+    border: none;
     background: white !important;
     font-family: inherit;
     font-size: 1rem;
     max-width: 180px;
 }
 
-.input:hover, .form_input:hover, .submit:hover {
+.form_input:hover, .submit:hover {
     cursor: pointer;
     border-color: var(--darkgreen);
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
 }
 
+.input:hover {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.55);
+    cursor: pointer;
+    opacity: 0.7;
+}
+
 svg:hover {
-    opacity: 0.8;
-    filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.65));
+    opacity: 0.3;
+    filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.85));
 }
 
 .bottom_nav {
@@ -284,8 +293,7 @@ svg:hover {
         width: 100%;
         position: fixed;
         display: flex;
-        background: rgb(230,255,254);
-        background: linear-gradient(164deg, rgba(230,255,254,1) 0%, rgba(244,255,245,1) 82%);
+        background: var(--lightgreen);
         border-top: solid 2px var(--lightgreen);
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         bottom: 0;
