@@ -59,9 +59,9 @@ ul {
 
 .main-container {
     margin: 0 auto 0 auto;
-    padding-top: 63px;
-    padding-bottom: 63px;
-    min-height: 93.6vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    min-height: 70vh;
     width: 85%;
 }
 
@@ -73,6 +73,7 @@ ul {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     background: rgb(230,255,254);
     background: linear-gradient(164deg, rgba(230,255,254,1) 0%, rgba(244,255,245,1) 82%);
+    z-index: 9;
 
 }
 
@@ -198,7 +199,7 @@ ul a {
     max-width: 180px;
 }
 
-.input:hover {
+.input:hover, .form_input:hover, .submit:hover {
     cursor: pointer;
     border-color: var(--darkgreen);
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
@@ -211,6 +212,7 @@ svg:hover {
 
 .bottom_nav {
     display: none;
+    z-index: 9;
 }
 
 .category {
@@ -318,4 +320,59 @@ svg:hover {
 
 .post-content {
     padding: 20px calc(7% + 7px);
+}
+
+
+.contact {
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.submit {
+    background: transparent;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    border: solid 2px var(--lightgreen);
+}
+
+.form_input {
+    padding: 10px;
+    border: solid 2px var(--lightgreen);
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    width: calc(100% - 24px);
+    position: relative;
+}
+
+label {
+    display: flex;
+}
+
+label span {
+    margin-left: auto;
+}
+
+textarea {
+    overflow-x: hidden;
+    resize: vertical;
+    width: 100%;
+    min-height: 100px;
+} 
+
+form {
+    overflow: hidden;
+    width: 100%;
+    max-width: 550px; 
+    margin: auto;
+    border: solid 2px var(--lightgreen);
+    padding: 20px;
+    background: white;
+    z-index: 0;
+}
+
+.pageclip-form__success__message {
+    margin: -20px !important;
 }

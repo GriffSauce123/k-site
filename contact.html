@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kareena Kayla Kumar - Contact</title>
-    <link rel="stylesheet" href="style.css"></head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+</head>
 <body>
     <!-- THIS IS THE TOP BAR OF THE SITE THAT STICKS-->
     <div class="header">
@@ -40,15 +42,23 @@
 
     
     <div class="main-container" style="display: flex;">
-        <br><br><br>
-        <div style="margin: auto; display: table;">
-            <label for="name">Full Name:</label><br>
-            <input type="text" name="name" class="input"><br><br>
-            <label for="email">Email Address:</label><br>
-            <input type="email" name="email" class="input"><br><br>
-            <label for="message">Message:</label><br>
-            <textarea name="message" class="input"></textarea>
-        </div>
+        <form action="https://send.pageclip.co/Fn6HoAuUZ0bEn4xmVm353jy2pOastceK/contact-form" class="pageclip-form" method="post">              <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
+            <label for="name">Full Name: <span>*</span></label>
+            <input class="form_input" type="text" name="name" placeholder="Jason Doe" required/>
+            <label for="email">Email Address: <span>*</span></label>
+            <input class="form_input" type="email" name="email" placeholder="jasonrules222@gmail.com" required/>
+            <label for="phone_number">Phone Number: <span>*</span></label>
+            <i>Format: 123-456-7890</i>
+            <input class="form_input" type="tel" name="phone_number" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
+            
+            <textarea name="message" class="form_input" placeholder="I am interested in..."></textarea><br>
+          
+            <!-- This button will have a loading spinner. Keep the inner span for best results. -->
+            <button type="submit" class="pageclip-form__submit submit">
+                <span>Submit</span>
+            </button>
+        </form>
     </div>
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 </body>
 </html>
