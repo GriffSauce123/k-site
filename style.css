@@ -125,7 +125,8 @@ ul a {
     position: absolute;
     left: 5px;
     top: 31px;
-    padding-top: 4px;
+    padding-top: 0px;
+    margin-top: -2px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
 }
 
