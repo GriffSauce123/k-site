@@ -8,11 +8,27 @@
     --light-text: #151515cc;
 
 }
+body {
+    background: #011306;
+}
+
+
+.image_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: auto;
+    opacity: 0.3;
+    filter: blur(6px);
+
+}
 
 * {
     font-family: "Cormorant Garamond", serif;
     transition: 0.15s ease-in-out;
-    color: var(--darkgreen);
+    color: var(--white);
 }
 
 .container {
