@@ -1,0 +1,28 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import bg from "../assets/bg.jpg";
+---
+
+<Layout title="Kareena Kayla Kumar">
+  <!-- Blurred at 30% opacity, so a small low-quality source is enough. -->
+  <Image
+    src={bg}
+    alt=""
+    width={960}
+    quality={40}
+    format="avif"
+    loading="eager"
+    fetchpriority="high"
+    class="fixed top-0 left-0 -z-10 h-auto w-screen opacity-30 blur-[6px]"
+  />
+
+  <main class="box-border flex h-dvh items-center justify-center overflow-hidden px-2 pt-4 text-center">
+    <div class="flow-root">
+      <h1 class="my-2 text-[48px] font-bold">Kareena Kayla Kumar</h1>
+      <h2 class="my-2 text-[32px] font-light italic">
+        A drop in the bucket from the hurricane that is my mind
+      </h2>
+    </div>
+  </main>
+</Layout>

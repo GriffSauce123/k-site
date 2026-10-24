@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@import "@fontsource-variable/cormorant-garamond/wght.css";
+@import "@fontsource-variable/cormorant-garamond/wght-italic.css";
+
+@theme {
+  --font-serif: "Cormorant Garamond Variable", serif;
+  --color-bg: #011306;
+  --color-cream: #e6dbc1;
+}
+
+@layer base {
+  html {
+    @apply bg-bg text-cream font-serif;
+  }
+}
